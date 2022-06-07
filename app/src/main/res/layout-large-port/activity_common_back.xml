@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menuActivityFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/commonMenuActivityDrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/commonMenuActivityToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                android:contentInsetStart="0dp"
+                android:contentInsetLeft="0dp"
+                android:contentInsetEnd="0dp"
+                android:contentInsetRight="0dp"
+                android:elevation="5dp"
+                app:contentInsetEnd="0dp"
+                app:contentInsetStart="0dp">
+
+
+                <ImageView
+                    android:id="@+id/back_icon_img"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|left"
+                    android:padding="8dp"
+                    android:src="@drawable/back_icon" />
+                <!-- <TextView
+                     android:id="@+id/commonMenuActivityTitleTextView"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_marginLeft="@dimen/contentSizeNormal"
+                     android:layout_marginRight="@dimen/contentSizeNormal"
+                     android:gravity="center"
+                     android:maxLines="2"
+                     android:text="demo"
+                     android:textColor="@color/title_text_color"
+                     android:textSize="@dimen/contentSizeNormal"
+                     android:textStyle="bold"
+                     android:typeface="serif" />-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:src="@drawable/idonate_logo" />
+
+                <ImageView
+                    android:id="@+id/refreshMenu"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end|right"
+                    android:padding="10dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <FrameLayout
+                android:id="@+id/commonMenuActivityFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/commonMenuActivityToolbar"
+                 android:layout_above="@+id/tabMode"/>
+
+            <LinearLayout
+                android:id="@+id/tabMode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:background="@drawable/bottombar_gradient"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/linear_browse"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:id="@+id/browse_img"
+                        android:tint="@color/colorAccent"
+                        android:src="@drawable/browse"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:id="@+id/browse_tv"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/colorAccent"
+                        android:text="Browse" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/linear_myspace"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:id="@+id/my_space_img"
+                        android:tint="@color/colorAccent"
+                        android:src="@drawable/myspace"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:id="@+id/my_space_tv"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/colorAccent"
+                        android:text="My Space" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</FrameLayout>

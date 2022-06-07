@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.BrowseActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/better_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/browse_better"
+                    android:textAllCaps="true"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/_25sdp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/browse_sentence"
+                   android:textSize="@dimen/_14sdp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/white"
+                    android:textStyle="italic" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:text="@string/browse_writter_name"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/colorAccent" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/united_state_location_relative"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/browse_layout_border"
+                        android:paddingTop="@dimen/_25sdp">
+
+                        <ImageView
+                            android:id="@+id/usa_img"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/usa_icon" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/usa_img"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:text="@string/browse_united_state"
+                            android:textAllCaps="true" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/international_layout"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/browse_layout_border"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/_25sdp">
+
+                        <ImageView
+                            android:id="@+id/inter_img"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/in_global_icon" />
+
+                        <TextView
+                            android:id="@+id/browse_international_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/inter_img"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:text="@string/browse_international"
+                            android:textAllCaps="true" />
+                        <!--<TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/browse_charites"
+                            android:id="@+id/browse_charites_tv"
+                            android:gravity="center"
+                            android:layout_below="@+id/browse_international_tv"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/browse_register"
+                            android:gravity="center"
+                            android:layout_below="@+id/browse_charites_tv"/>-->
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/name_relative_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/browse_layout_border"
+                        android:paddingTop="@dimen/_25sdp"
+                        android:paddingBottom="@dimen/_15sdp">
+
+                        <ImageView
+                            android:id="@+id/name_img"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/name_icon" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/name_img"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:text="@string/browse_name"
+                            android:textAllCaps="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/type_relative_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/browse_layout_border"
+                        android:paddingTop="@dimen/_25sdp">
+
+                        <ImageView
+                            android:id="@+id/type_img"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/type_icon" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/type_img"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:text="@string/browse_type"
+                            android:textAllCaps="true" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/advance_search_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_60sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_60sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/browse_search_border"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/browse_advance_search"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

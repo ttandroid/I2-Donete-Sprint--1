@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ChangePasswordActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/commonMenuActivityToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                android:contentInsetStart="0dp"
+                android:contentInsetLeft="0dp"
+                android:contentInsetEnd="0dp"
+                android:contentInsetRight="0dp"
+                android:elevation="5dp"
+                app:contentInsetEnd="0dp"
+                app:contentInsetStart="0dp">
+
+                <ImageView
+                    android:id="@+id/back_icon_change_img"
+                    android:layout_width="45dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="start|left"
+                    android:padding="8dp"
+                    android:src="@drawable/back_icon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:gravity="center"
+                    android:text="@string/change_password"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/title_color" />
+            </androidx.appcompat.widget.Toolbar>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/commonMenuActivityToolbar"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/logo_new" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/change_password_title"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                  android:textSize="@dimen/_14sdp"
+                    android:visibility="gone"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/old_password_layout_input"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorPrimaryDark">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/old_password"
+                        android:hint="@string/change_old_password"
+                        android:text=""
+                        android:backgroundTint="@color/edittextline_color"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:inputType="textPassword"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/new_password_layout_input"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorPrimaryDark">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/new_password"
+                        android:hint="@string/change_change_password"
+                        android:text=""
+                        android:backgroundTint="@color/edittextline_color"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:inputType="textPassword"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_password_hint"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:gravity="start"
+                    android:layout_marginRight="@dimen/_10sdp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/submit_btn"
+                    android:layout_marginLeft="@dimen/_60sdp"
+                    android:layout_marginTop="@dimen/_35sdp"
+                    android:layout_marginRight="@dimen/_60sdp"
+                    android:background="@drawable/login_botton_border"
+                    android:text="@string/change_submit"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "141870135691",
+    "firebase_url": "https://i2donate.firebaseio.com",
+    "project_id": "i2donate",
+    "storage_bucket": "i2donate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141870135691:android:524351c3ea62aa7c17d78e",
+        "android_client_info": {
+          "package_name": "com.i2donate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141870135691-r7ql8d4f35drk4n5tc6rekntkgcr93bi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4HnSpT9ZroC0D1S8QD0zqaaqyeyVEkXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141870135691-r7ql8d4f35drk4n5tc6rekntkgcr93bi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

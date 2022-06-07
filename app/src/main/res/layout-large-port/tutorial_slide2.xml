@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:background="@drawable/splash_background"
+    tools:context=".Activity.WelcomeActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/snellroundhandboldscript"
+            android:text="@string/welcome_all_in_one"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_40sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/splashlogo" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_140sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:src="@drawable/finance_icon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/smarter_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/snellroundhandboldscript"
+            android:text="@string/welcome_smarter"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_70sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/welcome_objective"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_charities"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_support"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
